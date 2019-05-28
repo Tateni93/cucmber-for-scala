@@ -78,6 +78,7 @@ project/plugins/project/
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
+.idea
 
 # CMake
 cmake-build-debug/
