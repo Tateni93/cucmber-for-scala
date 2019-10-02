@@ -1,13 +1,15 @@
 package stepdefs
 
-class BaseStepDefs {
+import cucumber.api.scala.{EN, ScalaDsl}
+import utils.methods.Input._
 
-// implement click step def using methods from utils
-  When("""^$""") = () => {
-    ???
+class BaseStepDefs extends ScalaDsl with EN {
+
+  And("""^I type (.*) in (.*)$""") { (text: String, id: String) =>
+    sendKeysByName(id, text)
   }
-// implment enter text step def using methods from utils
-  When("""^$""") = () => {
-    ???
+
+  Then("""^I click (.*)$""") { (id: String) =>
+    clickByName(id)
   }
 }

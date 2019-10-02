@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.support.ui.FluentWait
-import Browser.Browser.driver
+import utils.driver.Driver.driver
 
 object Wait {
 
